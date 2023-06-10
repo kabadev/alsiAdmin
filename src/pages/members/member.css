@@ -1,0 +1,124 @@
+.member__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 10px;
+}
+.member__card {
+  display: flex;
+  gap: 15px;
+  height: 100px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.member__card .member__image {
+  width: 25%;
+  overflow: hidden;
+}
+.member__card .member__body {
+  color: var(--text-color);
+  width: 75%;
+}
+.member__card .member__body h3 {
+  color: var(--header-text-color);
+  width: 75%;
+}
+.member__card .member__body .state {
+  color: var(--header-text-color);
+  font-size: 0.7rem;
+}
+.member__detail {
+  display: flex;
+  gap: 30px;
+}
+.info__container {
+  width: 60%;
+}
+.member__info__details {
+  display: flex;
+  gap: 20px;
+}
+.info__container .member__image {
+  width: 200px;
+}
+.info__container .member__image img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.info__container .info {
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+}
+.member__detail .images__container {
+  width: 40%;
+}
+.other__details {
+  margin-top: 20px;
+}
+.entries {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  /* justify-content: space-between; */
+}
+.entries .key {
+  font-weight: bold;
+  min-width: 150px;
+}
+.image_detail {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .member__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .member__detail {
+    flex-direction: column;
+  }
+  .info__container {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .member__card .member__image {
+    width: 30%;
+  }
+  .member__card .member__body {
+    width: 70%;
+  }
+  .member__card .member__body h3 {
+    font-size: 0.8rem;
+  }
+  .member__card .member__body p {
+    font-size: 0.8rem;
+  }
+  .member__info__details {
+    flex-direction: column;
+  }
+  .info__container .member__image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .info__container .member__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .entries .key {
+    font-weight: bold;
+    min-width: auto;
+  }
+  .entries.remark {
+    flex-direction: column;
+  }
+  .member__detail .images__container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+.updateImages {
+  display: flex;
+}
+.part1,
+.part2 {
+  width: 50%;
+}
+.image__section__title.banner {
+  width: 100%;
+  height: 250px;
+}
+.image__section__title.banner {
+  width: 100%;
+  height: 250px;
+}
+.image__section__title .images {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-top: 10px;
+}
+.image__section__title .image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.image__section__title.banner .image {
+  width: 100%;
+}
+.image__section__title .image img {
+  position: absolute;
+}
+.image__input {
+  opacity: 0;
+  height: 100%;
+  z-index: 111;
+  position: absolute;
+  cursor: pointer;
+}
+.edit__tab {
+  display: flex;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: var(--header-text-color);
+  background: var(--muted-color);
+  z-index: 11;
+}
+.image__edit__icon {
+  font-size: 25px;
+}
